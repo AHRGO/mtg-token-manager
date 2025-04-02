@@ -36,24 +36,39 @@ class TokenWidget extends StatelessWidget {
             children: [
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 32.0),
+                  padding: EdgeInsets.symmetric(vertical: size * 0.032),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                    children: [Text(state.name), Text(state.type)],
+                    children: [Text(state.name)],
                   ),
                 ),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(state.type, style: TextStyle(fontSize: size * 0.05)),
+                ],
+              ),
               Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 45.0),
-                child: Text(state.keywords ?? ''),
+                padding: EdgeInsets.only(
+                  top: size * 0.08,
+                  bottom: size * 0.045,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [Text(state.keywords ?? '')],
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 25.0, bottom: 25.0),
+                    padding: EdgeInsets.only(
+                      right: size * 0.025,
+                      bottom: size * 0.025,
+                    ),
                     child: Text("${state.power}/${state.toughness}"),
                   ),
                 ],

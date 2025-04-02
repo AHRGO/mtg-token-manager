@@ -7,8 +7,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: TokenWidget.big(token: Token.faerie())),
-    );
+    return Scaffold(body: Center(child: TokenWidget(token: Token.faerie())));
   }
 }
