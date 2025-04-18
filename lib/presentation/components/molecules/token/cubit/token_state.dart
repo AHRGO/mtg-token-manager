@@ -1,4 +1,4 @@
-import 'package:mtg_token_manager/presentation/components/molecules/token/helper/token.dart';
+import 'package:mtg_token_manager/models/token.dart';
 
 abstract class TokenState {
   final String name;

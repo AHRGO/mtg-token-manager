@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mtg_token_manager/presentation/components/molecules/token/cubit/token_cubit.dart';
 import 'package:mtg_token_manager/presentation/components/molecules/token/cubit/token_state.dart';
-import 'package:mtg_token_manager/presentation/components/molecules/token/helper/token.dart';
+import 'package:mtg_token_manager/models/token.dart';
 import 'package:mtg_token_manager/presentation/theme/theme_extensions.dart';
 
 class TokenWidget extends StatelessWidget {
