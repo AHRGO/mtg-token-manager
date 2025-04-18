@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:mtg_token_manager/presentation/components/molecules/token/helper/token.dart';
+import 'package:mtg_token_manager/models/token.dart';
 import 'package:mtg_token_manager/presentation/components/molecules/token/token_widget.dart';
 
 class AnimatedTokenWidget extends StatefulWidget {
@@ -21,7 +21,7 @@ class _AnimatedTokenWidgetState extends State<AnimatedTokenWidget>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: const Duration(microseconds: 400),
+      duration: const Duration(milliseconds: 100),
       vsync: this,
     );
 
