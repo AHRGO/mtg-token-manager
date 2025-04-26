@@ -21,7 +21,7 @@ class _AnimatedTokenWidgetState extends State<AnimatedTokenWidget>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 100),
+      duration: const Duration(milliseconds: 300),
       vsync: this,
     );
 
